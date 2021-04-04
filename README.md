@@ -56,18 +56,23 @@ _의료데이터 API : API for Electronic Medical Record service_
         [진단 테이블 - 컬럼 지정 검색] emr_api/condition/?col=<key>&search=<key>
         [처방 테이블 - 컬럼 지정 검색] emr_api/drug/?col=<key>&search=<key>
      
-       - 검색 예시 1) http://HOST-ADDRESS-HERE/emr_api/person/?col=year_of_birth&search=1990
+       - 검색 예시
+       
+         http://HOST-ADDRESS-HERE/emr_api/person/?col=year_of_birth&search=1990
 
                 검색 동작 설명 : person 테이블의 year_of_birth컬럼에 대해 1990의 값을 갖는 모든 행 조회
-       
-       - 검색 예시 2) http://HOST-ADDRESS-HERE/emr_api/person/?col=year_of_birth&search=1990&ordering
+         
+         http://HOST-ADDRESS-HERE/emr_api/person/?col=year_of_birth&search=1990&ordering
 
                 검색 동작 설명 : person 테이블의 year_of_birth컬럼에 대해 1990의 값을 갖는 모든 행 조회
      
      - _**검색 컬럼(col)과 검색할 키워드(search) 모두 부분일치에 대해 동일한 파라미터를 사용해 키워드 검색이 가능하다.**_
        _**검색할 컬럼에는 여러개의 키워드를 입력할 수 있다.**_
      
-       - 복수의 컬럼 패턴을 활용한 부분일치 검색 예시) http://HOST-ADDRESS-HERE/emr_api/drug/?col=date,source&search=2020-06
+       - 복수의 컬럼 패턴 & 부분일치 검색 예시
+       
+       
+         http://HOST-ADDRESS-HERE/emr_api/drug/?col=date,source&search=2020-06
 
                 검색 동작 설명 : drug 테이블 내 date, source 문자열을 포함한 컬럼들에서 2020-06 값을 포함하는 모든 행 조회
      
