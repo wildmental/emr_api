@@ -118,11 +118,19 @@ _의료데이터 API : API for Electronic Medical Record service_
      
      - 유효하지 않은 검색 파라미터 전달시 응답
      
-        - 유효한 호출 패턴에 대해 col, search 이외의 파라미터가 전달된 경우 이를 무시하고 필터링되지 않은 기본 조회 결과를 전달한다. (파라미터가 전달되지 않았을 때와 동일)
+        - 유효하지 않은 검색 호출 예시
         
-          col 파라미터가 전달되지 않은 경우에도 검색할 컬럼이 없기 때문에 필터링 없이 기본 조회 결과를 전달한다.
           
-        - 응답예시 (유효하지 않은 파라미터 : /emr_api/person/?hahaha=aaa" 에 대한 응답)
+          http://HOST-ADDRESS-HERE/emr_api/person/?hahaha=aaa
+          
+                유효한 호출 패턴에 대해 col, search 이외의 파라미터가 전달된 경우 이를 무시하고 기본 조회
+                (파라미터가 전달되지 않았을 때와 동일)
+          
+          http://HOST-ADDRESS-HERE/emr_api/person/?search=aaa
+        
+                (col 파라미터 없이 search 파라미터만 전달된 경우에도 검색할 컬럼이 없기 때문에 기본 조회만 수행)
+          
+        - 응답예시 (유효하지 않은 파라미터 : /emr_api/person/?hahaha=aaa 에 대한 응답)
      
                   {
                     "count": 1000,
