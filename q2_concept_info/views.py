@@ -1,4 +1,4 @@
-from rest_framework import serializers, generics, filters
+from rest_framework import serializers, generics
 from q2_concept_info.models import Concept
 from q3_row_search.filters import FieldSearchFilter
 
