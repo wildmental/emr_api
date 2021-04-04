@@ -128,7 +128,7 @@ _의료데이터 API : API for Electronic Medical Record service_
           
           http://HOST-ADDRESS-HERE/emr_api/person/?search=aaa
         
-                (col 파라미터 없이 search 파라미터만 전달된 경우에도 검색할 컬럼이 없기 때문에 기본 조회만 수행)
+                col 파라미터 없이 search 파라미터만 전달된 경우에도 검색할 컬럼이 없기 때문에 기본 조회만 수행
           
         - 응답예시 (유효하지 않은 파라미터 : /emr_api/person/?hahaha=aaa 에 대한 응답)
      
