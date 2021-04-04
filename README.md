@@ -218,7 +218,7 @@ _의료데이터 API : API for Electronic Medical Record service_
      - 개념 사전 검색은 1번의 테이블 행 조회와 기본적으로 동일하나, col 파라미터 없이 기본 검색 호출이 가능하다.
      
             [개념 리스트] emr_api/concept/
-            [기본 검색] emr_api/concept/?search=2733333
+            [기본 검색] emr_api/concept/?search=release
             [컬럼 지정 검색] emr_api/concept/?col=_id&search=2733333
             
   
